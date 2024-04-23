@@ -3,6 +3,8 @@ body {
   padding: 0;
   height: 100%;
   font-family: sans-serif;
+  background-color: black;
+  color: #f0f0ff;
 }
 .container {
   display: flex;
@@ -14,7 +16,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: start;
-  padding: 0 20px;
   border: solid 1px;
 }
 .main {
@@ -23,7 +24,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: start;
-  padding: 0 20px;
   border: solid 1px;
 }
 .right-side {
@@ -38,8 +38,28 @@ body {
 .cards-container {
   display: flex;
   flex-direction: column;
-  gap: 50px;
   justify-content: start;
-  align-items: center;
+  align-items: self-start;
   height: 100vh;
+}
+.post-section {
+  width: 100vh;
+  border: solid 1px;
+}
+.user-profile {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.logo {
+  align-items: flex-start;
+}
+
+.card {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px;
+  border-radius: 15px;
 }
